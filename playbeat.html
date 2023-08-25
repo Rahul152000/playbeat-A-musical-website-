@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+  <title>playbeat</title>
+</head>
+<style>
+    .button1{
+        background-color: brown;
+        height: 180px;width: 20%;
+}
+ *{
+  background-color: #151b29;
+ } 
+
+
+    .button2{
+        background-color: rgb(250, 215, 235);
+     
+  width: 20%;
+  height: 180px;
+
+  }
+  
+  .button5{
+        background-color: rgb(250, 215, 235);
+     
+  width: 20%;
+  height: 180px;
+
+
+  }
+    .container{
+
+  bottom: 5cm;
+  width: 100%;
+  height: 100%;
+display: flex;
+flex-wrap: wrap;
+
+ }
+    .button4{
+        background-color: #b9ffeb;
+        height: 180px;
+  width: 20%;
+  border: 1px solid blue;
+  box-sizing: border-box;
+
+    }
+    .button1:hover{
+      background-color: magenta;
+      border-radius: 100%;
+    }
+    h1{
+      font-family: 'Marck Script', cursive;
+      font-size: 70px;
+      text-shadow: 4px 4px 4px #aaa;
+    }
+        .div1 {
+          height: 180px;
+  width: 20%;
+  border: 1px solid blue;
+  box-sizing: border-box;
+}.message{
+  text-align: center;
+}
+
+</style>
+<body>
+  <div>
+  <div class="message">
+    <h1>PLAYBEAT</h1>
+</div>
+  <div><p>Music at your finger tips</p></div><br><br><br><br><br><br><br><br><br><br></div>
+    <div class = container my 4>
+      <div  class="button1" onclick="clicked(1)">
+      <audio  class="sounds" src="./sound/tunes/a.wav"></audio>
+      </div>
+      <div class="button2" onclick="clicked(2)">
+   <audio class="sounds" src="./sound/tunes/d.wav"></audio>
+      </div>
+      <div class="div1" onclick="clicked(3)" id="button3">
+        <audio class="sounds" src="./sound/tunes/e.wav"></audio>
+      </div>
+      <div class ="button4"   onclick="clicked(4)">
+        <audio class="sounds" src="./sound/tunes/f.wav"></audio>
+      </div>
+      <div class="button5"  onclick="clicked(5)">
+        <audio class="sounds" src="./sound/tunes/g.wav"></audio>
+      </div>
+<div class="button6" onclick="clicked(0)">
+  <audio class="sounds" src="./sound/tunes/h.wav" ></audio>
+    </div></div>
+</body>
+<script>
+  function clicked(j){
+    let sounds=document.querySelectorAll(".sounds")
+    console.log(sounds);
+sounds[j].play();
+  }
+</script>
+</html
